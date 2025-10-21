@@ -2,102 +2,129 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap');
 
 body {
-    font-family: 'Quicksand', sans-serif;
-    margin: 0;
-    background-color: #FFF5F5;
-    color: #444;
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  background: linear-gradient(to bottom, #fbe4ff, #e6f0ff); /* light pink to light blue */
+  color: #444;
 }
 
 /* Header */
 header {
-    background-color: #CECEDE;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-family: 'Pacifico', cursive;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #d8b4f8; /* soft lavender */
+  color: white;
+  padding: 25px;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Navigation (empty for now, still styled) */
+/* Navigation (currently empty) */
 nav {
-    display: flex;
-    justify-content: center;
-    background-color: #F5D1FF;
-    padding: 10px;
-    border-bottom: 2px dashed #e3aaff;
+  display: flex;
+  justify-content: center;
+  background-color: #ffc8dd; /* light pink */
+  padding: 12px;
+  border-bottom: 2px dashed #f4a4c2;
 }
 
+/* Links if added later */
 nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-weight: bold;
-    transition: color 0.3s ease;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #FFD1DC;
+  color: #ffdde1;
 }
 
-/* Main container */
+/* Main layout */
 main {
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 20px;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
 }
 
-/* Each section card */
+/* Featured Image */
+.featured-image {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.featured-image img {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Section cards */
 section {
-    background-color: #ffffff;
-    margin-bottom: 25px;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  margin-bottom: 25px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* Section titles */
+/* Section Titles */
 section h2 {
-    font-family: 'Pacifico', cursive;
-    color: #A86BC0;
-    text-align: center;
-    margin-bottom: 15px;
+  font-family: 'Pacifico', cursive;
+  color: #a86bc0;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
-/* About Me heading */
+/* Heading */
 h1 {
-    font-size: 2.5em;
-    color: white;
-    text-shadow: 2px 2px 5px white;
-    margin: 0;
+  font-size: 2.5em;
+  color: white;
+  text-shadow: 2px 2px 5px #fbe4ff;
+  margin: 0;
 }
 
 /* List styling */
 ul {
-    list-style-type: '💜 ';
-    padding-left: 20px;
-    line-height: 1.6;
+  list-style-type: '💜 ';
+  padding-left: 20px;
+  line-height: 1.6;
 }
 
-/* Paragraph spacing */
+/* Paragraphs */
 p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    margin: 10px 0;
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin: 10px 0;
 }
 
-/* Responsive design */
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #a5c8ff; /* soft light blue */
+  color: white;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.1em;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    body {
-        padding: 10px;
-    }
+  main {
+    padding: 10px;
+  }
 
-    section {
-        padding: 15px;
-    }
+  section {
+    padding: 15px;
+  }
+
+  .featured-image img {
+    height: auto;
+    width: 90%;
+  }
 }
-
